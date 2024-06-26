@@ -1,0 +1,46 @@
+import math
+import numpy as np
+import time
+
+from logging import DEBUG, INFO, WARNING
+from flwr.common.logger import log
+
+
+def read_schedule(file_path):
+    with open(file_path, 'r') as file:
+        # Read the entire file content
+        content = file.read()
+    
+    # Split the content by commas and convert to integers
+    schedule = [int(x.strip()) for x in content.split(',')]
+
+    seed = 1234
+    np.random.seed(seed)
+    schedule = np.random.permutation(schedule)
+    
+    log(INFO, "pre-read schedule: " + str(schedule))
+    
+    return schedule
+
+def get_non_IID_schedule(length):
+    time_seed = time.time()
+    np.random.seed(12345)
+    # np.random.seed(int(time_seed))
+    log(INFO, f"Schedule distribution {time_seed}")
+
+    distribution = [10, 10, 5, 5, 5, 5, 5, 5, 2, 2]
+    distribution = np.random.permutation(distribution)
+
+    log(INFO, distribution)
+
+    schedule = []
+
+    for index, count in enumerate(distribution):
+        schedule.extend([index] * count)
+
+    schedule = schedule * (1 + math.ceil(length / len(schedule)))
+
+    schedule = np.random.permutation(schedule)
+    log(INFO, schedule)
+
+    return schedule

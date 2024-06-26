@@ -1,0 +1,5 @@
+Nodes: 4
+1, 7, 1, 13,
+
+Precedence constraints:
+(0, 1), (0, 2), (2, 3),

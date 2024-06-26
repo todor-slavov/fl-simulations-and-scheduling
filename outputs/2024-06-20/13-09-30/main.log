@@ -1,0 +1,216 @@
+[2024-06-20 13:09:30,525][flwr][INFO] - Using seed 1718881770 for client dataset permutation
+[2024-06-20 13:09:30,525][flwr][INFO] - Using seed 123456 for dataset partition
+[2024-06-20 13:09:30,536][flwr][INFO] - Client dataset sizes:
+[2024-06-20 13:09:31,599][flwr][INFO] - Client 0 has 8993 training samples with label distribution: {0: 195, 1: 4277, 2: 486, 3: 1, 4: 2921, 5: 18, 6: 1090, 7: 5}
+[2024-06-20 13:09:32,393][flwr][INFO] - Client 1 has 6254 training samples with label distribution: {0: 320, 2: 1962, 4: 379, 7: 3593}
+[2024-06-20 13:09:32,607][flwr][INFO] - Client 2 has 1787 training samples with label distribution: {1: 98, 4: 1150, 5: 1, 7: 538}
+[2024-06-20 13:09:32,979][flwr][INFO] - Client 3 has 3148 training samples with label distribution: {0: 8, 1: 5, 2: 2138, 3: 184, 7: 1, 8: 758, 9: 54}
+[2024-06-20 13:09:34,329][flwr][INFO] - Client 4 has 11700 training samples with label distribution: {0: 583, 1: 1661, 2: 760, 3: 1126, 4: 621, 5: 1858, 6: 4211, 7: 880}
+[2024-06-20 13:09:35,133][flwr][INFO] - Client 5 has 6653 training samples with label distribution: {0: 2033, 3: 3494, 4: 120, 5: 122, 6: 15, 7: 50, 8: 111, 9: 708}
+[2024-06-20 13:09:36,130][flwr][INFO] - Client 6 has 7718 training samples with label distribution: {0: 1100, 1: 26, 2: 2, 3: 563, 4: 72, 5: 1496, 6: 6, 7: 337, 8: 166, 9: 3950}
+[2024-06-20 13:09:36,587][flwr][INFO] - Client 7 has 3481 training samples with label distribution: {0: 1101, 1: 1, 2: 1, 3: 154, 4: 9, 5: 1117, 7: 232, 8: 476, 9: 390}
+[2024-06-20 13:09:37,079][flwr][INFO] - Client 8 has 4145 training samples with label distribution: {0: 10, 3: 5, 5: 242, 7: 4, 8: 3724, 9: 160}
+[2024-06-20 13:09:37,095][flwr][INFO] - Client 9 has 121 training samples with label distribution: {5: 28, 8: 17, 9: 76}
+[2024-06-20 13:09:39,856][flwr][INFO] - Testloader has 84 test samples with label distribution: {0: 980, 1: 1135, 2: 1032, 3: 1010, 4: 982, 5: 892, 6: 958, 7: 1028, 8: 974, 9: 1009}
+[2024-06-20 13:09:39,857][flwr][WARNING] - 
+Setting `min_available_clients` lower than `min_fit_clients` or
+`min_evaluate_clients` can cause the server to fail when there are too few clients
+connected to the server. `min_available_clients` must be set to a value larger
+than or equal to the values of `min_fit_clients` and `min_evaluate_clients`.
+
+[2024-06-20 13:09:39,858][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=1, round_timeout=None)
+[2024-06-20 13:09:42,240][flwr][INFO] - Flower VCE: Ray initialized with resources: {'memory': 7924450100.0, 'object_store_memory': 3962225049.0, 'node:145.94.238.25': 1.0, 'CPU': 8.0, 'node:__internal_head__': 1.0}
+[2024-06-20 13:09:42,241][flwr][INFO] - Initializing global parameters
+[2024-06-20 13:09:42,241][flwr][INFO] - Requesting initial parameters from one random client
+[2024-06-20 13:09:43,871][flwr][INFO] - Received initial parameters from one random client
+[2024-06-20 13:09:43,872][flwr][INFO] - Evaluating initial parameters
+[2024-06-20 13:09:44,724][flwr][INFO] - initial parameters (loss, other metrics): 194.07958221435547, {'accuracy': 0.0967}
+[2024-06-20 13:09:44,724][flwr][INFO] - FL starting
+[2024-06-20 13:09:44,724][flwr][DEBUG] - fit_round 0: strategy sampled 10 clients (out of 10)
+[2024-06-20 13:09:54,651][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:10:01,791][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:10:01,916][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:10:04,387][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:10:06,992][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:10:07,075][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:10:07,113][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:10:07,983][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:10:08,029][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:10:08,122][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:10:16,820][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:10:16,948][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:10:17,077][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:10:17,196][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:10:17,299][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:10:17,383][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:10:27,126][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:10:27,313][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:10:27,395][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:10:27,516][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:10:27,615][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:10:27,682][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:10:34,139][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:10:34,226][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:10:34,353][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:10:34,406][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:10:34,500][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:10:40,213][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:10:40,302][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:10:40,462][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:10:40,560][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:10:45,431][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:10:45,577][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:10:45,675][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:10:48,594][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:10:48,675][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:10:48,736][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:10:48,836][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:10:48,937][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:10:49,030][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:10:49,098][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:10:49,196][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:10:54,524][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:10:54,714][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:10:57,858][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:10:57,940][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:10:58,040][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:10:58,110][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:11:03,031][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:11:03,104][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:11:03,201][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:11:03,296][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:11:06,029][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:11:06,152][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:11:06,223][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:11:06,316][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:11:06,430][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:11:14,554][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:11:14,662][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:11:14,808][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:11:14,895][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:11:14,972][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:11:15,035][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:11:15,117][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:11:21,702][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:11:21,800][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:11:23,355][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:11:23,444][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:11:23,529][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:11:23,653][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:11:23,746][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:11:31,490][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:11:31,596][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:11:31,754][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:11:31,883][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:11:31,952][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:11:31,996][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:11:32,168][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:11:32,256][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:11:35,375][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:11:36,360][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:11:37,563][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:11:37,703][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:11:46,301][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:11:46,411][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:11:46,494][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:11:46,572][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:11:46,631][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:11:53,691][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:11:53,760][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:11:53,859][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:11:53,914][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:11:53,956][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:11:54,016][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:11:59,485][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:11:59,570][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:11:59,633][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:11:59,721][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:12:05,583][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:12:05,704][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:12:09,462][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:12:09,551][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:12:09,749][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:12:09,833][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:12:09,925][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:12:09,996][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:12:10,092][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:12:10,161][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:12:13,129][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:12:13,234][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:12:13,322][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:12:15,048][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:12:15,215][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:12:17,857][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:12:17,931][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:12:21,732][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:12:22,619][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:12:24,653][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:12:24,687][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:12:28,695][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:12:28,758][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:12:28,851][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:12:28,880][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:12:31,520][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:12:33,397][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:12:33,479][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:12:35,508][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:12:37,770][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:12:37,793][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:12:37,960][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:12:37,988][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:12:42,342][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:12:42,502][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:12:42,618][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:12:43,903][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:12:43,991][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:12:49,305][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:12:49,452][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:12:52,200][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:12:52,316][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:12:52,378][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:12:52,496][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:12:56,530][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:12:56,632][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:13:02,646][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:13:02,741][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:13:02,833][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:13:02,900][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:13:07,841][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:13:07,946][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:13:07,946][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:13:14,419][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:13:14,501][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:13:14,597][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:13:14,687][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:13:14,794][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:13:18,991][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:13:19,126][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:13:19,242][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:13:20,857][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:13:20,940][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:13:21,067][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:13:21,139][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:13:21,231][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:13:21,331][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:13:25,523][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:13:32,076][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:13:32,215][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:13:32,353][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:13:32,507][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:13:33,614][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 0 again 🥳
+[2024-06-20 13:13:33,684][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 2 again 🥳
+[2024-06-20 13:13:41,919][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 4 again 🥳
+[2024-06-20 13:13:42,072][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 5 again 🥳
+[2024-06-20 13:13:42,209][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 1 again 🥳
+[2024-06-20 13:13:42,303][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 6 again 🥳
+[2024-06-20 13:13:42,354][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 8 again 🥳
+[2024-06-20 13:13:42,449][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 3 again 🥳
+[2024-06-20 13:13:42,530][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 9 again 🥳
+[2024-06-20 13:13:42,592][flwr][DEBUG] - pid 78719 | Yippie! Starting the client 7 again 🥳
+[2024-06-20 13:13:50,227][flwr][INFO] - FL finished
+[2024-06-20 13:13:50,227][flwr][INFO] - FL finished in 245.50297594070435
+[2024-06-20 13:13:50,228][flwr][INFO] - app_fit: losses_distributed []
+[2024-06-20 13:13:50,228][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-06-20 13:13:50,228][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-06-20 13:13:50,228][flwr][INFO] - app_fit: losses_centralized [(1718881784.7247195, 194.07958221435547), (0, 194.08408379554749), (5, 166.55439054965973), (15, 120.05326759815216), (20, 89.34769707918167), (25, 74.2328273653984), (30, 103.03029602766037), (35, 51.55178067088127), (45, 29.830516800284386), (50, 27.560503259301186), (55, 28.019524708390236), (60, 27.01210017502308), (65, 27.348888143897057), (70, 23.54676066339016), (75, 23.32182265818119), (80, 21.842177748680115), (85, 20.90205930173397), (90, 24.898218780755997), (95, 21.63125190883875), (100, 21.592904344201088), (105, 21.55287939310074), (110, 20.640120640397072), (115, 20.677796691656113), (120, 20.245691418647766), (130, 20.292532548308372), (135, 20.008423388004303), (140, 19.589662551879883), (145, 19.43561154603958), (150, 19.629605188965797), (155, 19.367564976215363), (160, 19.31357880681753), (170, 19.264328621327877), (175, 19.15666802972555)]
+[2024-06-20 13:13:50,228][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(1718881784.724731, 0.0967), (0, 0.0967), (5, 0.3231), (15, 0.5859), (20, 0.6404), (25, 0.7524), (30, 0.5852), (35, 0.7803), (45, 0.8979), (50, 0.9135), (55, 0.9011), (60, 0.9085), (65, 0.9034), (70, 0.92), (75, 0.9209), (80, 0.9264), (85, 0.9299), (90, 0.9064), (95, 0.9263), (100, 0.9254), (105, 0.9261), (110, 0.9298), (115, 0.9297), (120, 0.9321), (130, 0.9315), (135, 0.9342), (140, 0.9356), (145, 0.9361), (150, 0.9358), (155, 0.9369), (160, 0.9365), (170, 0.9366), (175, 0.9369)], 'end_timestamp': [(0, 1718882124.7248302), (5, 1718882124.7248302), (15, 1718882124.7248302), (20, 1718882124.7248302), (25, 1718882124.7248302), (30, 1718882124.7248302), (35, 1718882124.7248302), (45, 1718882124.7248302), (50, 1718882124.7248302), (55, 1718882124.7248302), (60, 1718882124.7248302), (65, 1718882124.7248302), (70, 1718882124.7248302), (75, 1718882124.7248302), (80, 1718882124.7248302), (85, 1718882124.7248302), (90, 1718882124.7248302), (95, 1718882124.7248302), (100, 1718882124.7248302), (105, 1718882124.7248302), (110, 1718882124.7248302), (115, 1718882124.7248302), (120, 1718882124.7248302), (130, 1718882124.7248302), (135, 1718882124.7248302), (140, 1718882124.7248302), (145, 1718882124.7248302), (150, 1718882124.7248302), (155, 1718882124.7248302), (160, 1718882124.7248302), (170, 1718882124.7248302), (175, 1718882124.7248302)], 'start_timestamp': [(0, 1718881784.724836), (5, 1718881784.724836), (15, 1718881784.724836), (20, 1718881784.724836), (25, 1718881784.724836), (30, 1718881784.724836), (35, 1718881784.724836), (45, 1718881784.724836), (50, 1718881784.724836), (55, 1718881784.724836), (60, 1718881784.724836), (65, 1718881784.724836), (70, 1718881784.724836), (75, 1718881784.724836), (80, 1718881784.724836), (85, 1718881784.724836), (90, 1718881784.724836), (95, 1718881784.724836), (100, 1718881784.724836), (105, 1718881784.724836), (110, 1718881784.724836), (115, 1718881784.724836), (120, 1718881784.724836), (130, 1718881784.724836), (135, 1718881784.724836), (140, 1718881784.724836), (145, 1718881784.724836), (150, 1718881784.724836), (155, 1718881784.724836), (160, 1718881784.724836), (170, 1718881784.724836), (175, 1718881784.724836)]}
